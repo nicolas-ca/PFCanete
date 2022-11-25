@@ -1,0 +1,11 @@
+.tarjeta{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: $large;
+    @include flex (row, center, none);
+    flex-wrap: wrap;
+}
+.tarjeta a{
+    padding: $small;
+    max-width: 400px;
+}

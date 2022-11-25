@@ -1,0 +1,83 @@
+.navbar {
+    background-color: $primary;
+    @include flex(row, space-around, center);
+    padding: $small;
+
+    &List {
+        display: flex;
+        gap: $small;
+        padding-top: $small;
+
+        &Item {
+            font-size: $fSmall;
+
+            & a:hover {
+                color: wheat;
+            }
+
+            &:hover ul {
+                display: block;
+            }
+        }
+    }
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    width: 15rem;
+    z-index: 1;
+
+    &Item {
+        padding: 1rem;
+
+        & a {
+            color: black;
+            font-size: 90%;
+
+            &:hover {
+                font-weight: bold;
+                color: black !important;
+            }
+        }
+    }
+}
+
+.active {
+    font-weight: bold;
+    color: wheat !important;
+}
+
+.searchBar {
+    align-self: center;
+}
+
+.input {
+    line-height: 28px;
+    border: 2px solid transparent;
+    border-bottom-color: white;
+    padding: 0.2rem 0;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+    &:focus :hover {
+        outline: none;
+        padding: 0.2rem 1rem;
+        border-radius: 1rem;
+        border-color: white;
+    }
+
+    &::placeholder {
+        color: white;
+    }
+
+    &:focus::placeholder {
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+}

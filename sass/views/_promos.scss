@@ -1,0 +1,40 @@
+.promos {
+    margin: 0 auto;
+    margin-top: $small;
+    display: flex;
+    flex-direction: column;
+    gap: $large;
+}
+
+.dia {
+    background-color: $primary;
+    display: flex;
+    padding: $large;
+    align-items: center;
+
+    & img {
+        max-width: 250px;
+    }
+
+    &Contenido {
+        padding: $small;
+
+        & h2 {
+            font-size: $fLarge;
+        }
+
+        & p {
+            font-size: $fMedium;
+        }
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .dia {
+        background-color: $primary;
+        display: flex;
+        flex-direction: column;
+        padding: $large;
+        align-items: center;
+    }
+}

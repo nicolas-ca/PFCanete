@@ -1,0 +1,13 @@
+footer {
+    background-color: $primary;
+    font-weight: bold;
+    margin-top: $medium;
+    padding: $xsmall;
+
+    & p {
+        font-size: $fSmall;
+        text-align: center;
+        padding: $medium;
+        color: white;
+    }
+}

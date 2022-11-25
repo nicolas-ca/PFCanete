@@ -1,0 +1,221 @@
+@charset "UTF-8";
+/* VARIABLES */
+/* COLORES */
+/* ESPACIADOS */
+/* FUENTES */
+/* TAMAÑO DE FUENTE */
+/* NORMALIZE */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: wheat;
+  font-family: "Montserrat", sans-serif; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  font-family: sans-serif;
+  color: white; }
+
+img {
+  width: 100%; }
+
+p {
+  text-align: justify; }
+
+main {
+  min-height: 100vh; }
+
+h1 {
+  text-align: center;
+  margin: 2rem; }
+
+/* MIXINS */
+/* PARTIALS */
+.navbar {
+  background-color: #ff4c2d;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem; }
+  .navbarList {
+    display: flex;
+    gap: 2rem;
+    padding-top: 2rem; }
+    .navbarListItem {
+      font-size: 1.4em; }
+      .navbarListItem a:hover {
+        color: wheat; }
+      .navbarListItem:hover ul {
+        display: block; }
+
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+  width: 15rem;
+  z-index: 1; }
+  .submenuItem {
+    padding: 1rem; }
+    .submenuItem a {
+      color: black;
+      font-size: 90%; }
+      .submenuItem a:hover {
+        font-weight: bold;
+        color: black !important; }
+
+.active {
+  font-weight: bold;
+  color: wheat !important; }
+
+.searchBar {
+  align-self: center; }
+
+.input {
+  line-height: 28px;
+  border: 2px solid transparent;
+  border-bottom-color: white;
+  padding: 0.2rem 0;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1); }
+  .input:focus :hover {
+    outline: none;
+    padding: 0.2rem 1rem;
+    border-radius: 1rem;
+    border-color: white; }
+  .input::placeholder {
+    color: white; }
+  .input:focus::placeholder {
+    opacity: 0;
+    transition: opacity 0.3s; }
+
+footer {
+  background-color: #ff4c2d;
+  font-weight: bold;
+  margin-top: 2.4rem;
+  padding: 1rem; }
+  footer p {
+    font-size: 1.4em;
+    text-align: center;
+    padding: 2.4rem;
+    color: white; }
+
+/* VIEWS */
+.tarjeta {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: none;
+  flex-wrap: wrap; }
+
+.tarjeta a {
+  padding: 2rem;
+  max-width: 400px; }
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  margin-top: 2rem; }
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: none;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 2.4rem; }
+
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; }
+
+.fotoProducto {
+  border-radius: 1rem;
+  max-width: 400px; }
+
+.articleText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.4rem; }
+  .articleText producto {
+    font-family: sans-serif;
+    font-size: 2.2em;
+    color: #ff4c2d; }
+  .articleText p {
+    margin-top: 0.5rem;
+    font-size: 2.2em; }
+
+.promos {
+  margin: 0 auto;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem; }
+
+.dia {
+  background-color: #ff4c2d;
+  display: flex;
+  padding: 6rem;
+  align-items: center; }
+  .dia img {
+    max-width: 250px; }
+  .diaContenido {
+    padding: 2rem; }
+    .diaContenido h2 {
+      font-size: 5.2em; }
+    .diaContenido p {
+      font-size: 2.2em; }
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .dia {
+    background-color: #ff4c2d;
+    display: flex;
+    flex-direction: column;
+    padding: 6rem;
+    align-items: center; } }
+
+.form {
+  display: block;
+  align-self: auto;
+  padding: 5rem 20%; }
+
+.formLabel {
+  font-size: 150%; }
+
+.formInput {
+  background-color: wheat;
+  border: 1px solid gray;
+  font-size: 200%;
+  margin: 1rem 0;
+  width: 100%; }
+
+.formInputBoton {
+  background-color: #ff4c2d;
+  color: white;
+  border: 0;
+  padding: 10px; }
+
+.contactoImg {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover; }
