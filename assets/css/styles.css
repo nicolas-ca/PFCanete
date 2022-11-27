@@ -168,6 +168,7 @@ footer p {
   padding: 4rem 4rem 1.5rem 4rem;
   text-align: center;
 }
+
 .delivery img {
   width: 60%;
 }
@@ -223,23 +224,28 @@ footer p {
   padding: 0 2rem;
   margin: 3rem 0 3rem 0;
 }
+
 .dias img {
   align-self: center;
   width: 25rem;
   border-radius: 1rem;
 }
+
 .dias h2 {
   font-size: 300%;
   padding: 0 0 2rem;
 }
+
 .diasContenido {
   padding: 2rem;
 }
+
 .precio {
   padding: 2rem 0;
   font-weight: bold;
   font-size: 300%;
 }
+
 /*** CONTACTO ***/
 
 .form {
@@ -247,9 +253,11 @@ footer p {
   align-self: auto;
   padding: 5rem 20%;
 }
+
 .formLabel {
   font-size: 150%;
 }
+
 .formInput {
   /*line-height: 28px;
     border: 2px solid transparent;
@@ -266,12 +274,14 @@ footer p {
   margin: 1rem 0;
   width: 100%;
 }
+
 .formInputBoton {
   background-color: rgb(255, 76, 45);
   color: white;
   border: 0;
   padding: 10px;
 }
+
 .contactoImg {
   width: 100%;
   height: 15rem;
@@ -284,6 +294,7 @@ footer p {
     height: 12rem;
     padding: 4rem;
   }
+
   .navbarList {
     width: 60rem;
     display: flex;
@@ -292,17 +303,21 @@ footer p {
     color: white;
     align-self: center;
   }
+
   .input {
     display: none;
   }
+
   .tarjeta Img {
     width: 70%;
   }
+
   a {
     display: flex;
     justify-content: space-around;
     padding: 5px;
   }
+
   .content {
     display: flex;
     justify-content: space-evenly;
