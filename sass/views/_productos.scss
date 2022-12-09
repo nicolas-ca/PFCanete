@@ -1,35 +1,43 @@
-.container{
+.container {
     max-width: 1920px;
     margin: 0 auto;
     margin-top: $small;
 }
-.cards{
+.cards {
+    max-width: 1200px;
+    margin: auto;
     @include flex (row, center, none);
     gap: $xsmall;
     flex-wrap: wrap;
     padding: $medium;
 }
-.box{
+
+.box {
     display: flex;
     flex-direction: column;
-    gap: $xsmall;
 }
-.fotoProducto{
+
+.fotoProducto {
+    padding: 2rem;
     border-radius: 1rem;
-    max-width: 400px;
+    max-width: 300px;
 }
-.articleText{
+
+.articleText {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: $medium;
-    & producto{
+    padding: 0 $medium;
+
+    & producto {
         font-family: $font-title;
         font-size: $fMedium;
         color: $primary;
     }
-    & p{
+
+    & p {
         margin-top: 0.5rem;
         font-size: $fMedium;
+        font-weight: bold;
     }
 }

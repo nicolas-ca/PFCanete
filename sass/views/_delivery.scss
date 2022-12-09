@@ -1,0 +1,14 @@
+.delivery {
+    @include flex (column, center, center);
+    margin: auto;
+
+    & p {
+        padding: $medium;
+        font-size: $fMedium;
+    }
+
+    &Mapa {
+        width: 90%;
+        min-height: 480px;
+    }
+}

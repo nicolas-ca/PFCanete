@@ -28,6 +28,9 @@
         }
     }
 }
+.precio{
+    font-size: $fLarge;
+}
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
     .dia {
@@ -36,5 +39,9 @@
         flex-direction: column;
         padding: $large;
         align-items: center;
+        text-align: center;
+    }
+    p{
+        text-align: center;
     }
 }

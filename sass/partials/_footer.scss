@@ -3,11 +3,42 @@ footer {
     font-weight: bold;
     margin-top: $medium;
     padding: $xsmall;
+    @include flex(row, space-around, none);
+    padding-top: $small;
 
-    & p {
-        font-size: $fSmall;
-        text-align: center;
-        padding: $medium;
+    a:hover {
+        color: wheat;
+    }
+
+    ul{
+        align-items: center;
+        padding: 0;
+    }
+
+    li {
         color: white;
+        font-size: $fSmall;
+        font-weight: normal;
+    }
+    p{
+        font-size: $fSmall;
     }
 }
+
+.footerIcono {
+    width: 20px;
+    padding: 5px 0;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    footer {
+        background-color: $primary;
+        font-weight: bold;
+        margin-top: $medium;
+        padding: $xsmall;
+        @include flex(column, space-around, center);
+        padding-top: $small;
+        
+    }
+}
+
